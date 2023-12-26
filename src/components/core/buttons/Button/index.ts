@@ -19,7 +19,7 @@ const Button = ({
       type="button"
       class=${variant}
       ?disabled=${disabled}
-      @onClick=${!disabled && onClick}
+      @click=${!disabled && onClick}
     >
       <slot>${children}</slot>
     </button>
