@@ -12,11 +12,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "test": "vitest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "lit": "^3.1.0"
+    "lit": "^3.1.0",
+    "webdriverio": "^8.27.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.6",
@@ -26,11 +28,14 @@
     "@storybook/web-components-vite": "^7.6.6",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
+    "@vitest/browser": "^1.1.0",
     "eslint": "^8.56.0",
+    "happy-dom": "^12.10.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.6.6",
     "typescript": "^5.3.3",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vitest": "^1.1.0"
   }
 }
