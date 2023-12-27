@@ -2,7 +2,7 @@
   "name": "web-components-dinelli-ds",
   "author": "Adriel Dinelli <adriel.dinelli@gmail.com>",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "engines": {
     "npm": "10.2.3",
