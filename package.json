@@ -1,12 +1,27 @@
 {
-  "name": "web-components-dinelli-ds",
+  "name": "wc-dinelli-ds",
   "author": "Adriel Dinelli <adriel.dinelli@gmail.com>",
-  "private": true,
-  "version": "1.0.0",
+  "keywords": [
+    "design-system",
+    "ux",
+    "ui",
+    "web-components"
+  ],
+  "license": "MIT License",
+  "version": "1.0.1",
   "type": "module",
   "engines": {
     "npm": "10.2.3",
     "node": "20.10.0"
+  },
+  "files": ["dist"],
+  "main": "./dist/dinelli-ds.umd.cjs",
+  "module": "./dist/dinelli-ds.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dinelli-ds.js",
+      "require": "./dist/dinelli-ds.umd.cjs"
+    }
   },
   "scripts": {
     "dev": "vite",
@@ -17,10 +32,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "lit": "^3.1.0",
-    "webdriverio": "^8.27.0"
+    "lit": "^3.1.0"
   },
   "devDependencies": {
+    "rollup-plugin-minify-html-literals": "^1.2.6",
     "@storybook/addon-essentials": "^7.6.6",
     "@storybook/addon-links": "^7.6.6",
     "@storybook/blocks": "^7.6.6",
@@ -36,6 +51,7 @@
     "storybook": "^7.6.6",
     "typescript": "^5.3.3",
     "vite": "^5.0.8",
-    "vitest": "^1.1.0"
+    "vitest": "^1.1.0",
+    "webdriverio": "^8.27.0"
   }
 }
