@@ -11,7 +11,6 @@ class Button extends LitElement {
 
   @property({ type: Boolean }) disabled: boolean = false;
   @property() variant: ButtonVariant = 'primary';
-  // @property() onClick: Function = () => {};
 
   render() {
     return html`

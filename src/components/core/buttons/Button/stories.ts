@@ -19,7 +19,6 @@ const meta = {
   argTypes: {
     variant: { control: 'select', options: ['primary', 'secondary', 'link'] },
     disabled: { control: 'boolean' },
-    onClick: { action: 'onClick' },
   },
 };
 
@@ -35,6 +34,12 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
+  },
+};
+
+export const Link: Story = {
+  args: {
+    variant: 'link',
   },
 };
 
