@@ -1,13 +1,15 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import styles from './style';
+import primary from './styles/primary';
+import secondary from './styles/secondary';
+import link from './styles/link';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'link';
+export const buttonVariants = ['primary', 'secondary', 'link'];
+export type ButtonVariant = typeof buttonVariants[number];
 
 @customElement('ds-button')
 class Button extends LitElement {
-
-  static styles = styles;
+  static styles = [primary, secondary, link];
 
   @property({ type: Boolean }) disabled: boolean = false;
   @property() variant: ButtonVariant = 'primary';
