@@ -1,0 +1,26 @@
+{
+  "name": "dinelli-ds",
+  "version": "1.0.0",
+  "description": "A agnostic web-component library",
+  "author": "Adriel Dinelli <adriel.dinelli@gmail.com>",
+  "keywords": [
+    "ux",
+    "ui",
+    "web-components",
+    "vanilla"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": ">=10.2.3"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  }
+}
