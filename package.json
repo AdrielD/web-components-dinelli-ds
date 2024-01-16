@@ -18,9 +18,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "devDependencies": {
-    "vite": "^5.0.8"
+    "happy-dom": "^13.1.4",
+    "vite": "^5.0.8",
+    "vitest": "^1.2.0",
+    "webdriverio": "^8.27.2"
   }
 }

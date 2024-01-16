@@ -2,27 +2,28 @@
   font-family: 'Lucida Sans', Verdana, sans-serif;
   font-weight: 700;
   cursor: pointer;
-  border: 2px solid #222;
+  border: 2px solid #8DB52F;
   outline: none;
   padding: 8px 16px;
   position: relative;
   background-color: transparent;
-  color: #222;
+  color: #8DB52F;
   transition: .1s;
 }
 
 .secondary:hover {
   color: #fff;
-  background-color: #222;
+  background-color: #8DB52F;
 }
 
 .secondary:active {
-  background-color: #777;
-  border: 2px solid #777;
+  background-color: #8DB52F;
+  color: #000;
+  border: 2px solid #8DB52F;
 }
 
 .secondary:focus {
-  box-shadow: 0 0 1px 2px #222;
+  box-shadow: 0 0 1px 2px #8DB52F;
 }
 
 .secondary:disabled {

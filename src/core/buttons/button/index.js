@@ -2,13 +2,13 @@ import template from './template.js';
 
 class DSButton extends HTMLElement {
   VARIANTS = ['primary', 'secondary', 'link'];
+  DEFAULT_VARIANT = 'primary';
 
   static get observedAttributes() {
-    return ['variant'];
+    return ['variant', 'disabled'];
   }
 
   get variant() {
-    console.log('get variant');
     return this.getAttribute('variant');
   }
 
@@ -16,7 +16,19 @@ class DSButton extends HTMLElement {
     if (this.VARIANTS.includes(value)) {
       this.setAttribute('variant', value);
     } else {
-      this.removeAttribute('variant');
+      this.setAttribute('variant', this.DEFAULT_VARIANT);
+    }
+  }
+
+  get disabled() {
+    return this.getAttribute('disabled');
+  }
+
+  set disabled(_) {
+    if (this.hasAttribute('disabled')) {
+      this.setAttribute('disabled', true);
+    } else {
+      this.removeAttribute('disabled');
     }
   }
 
@@ -29,31 +41,29 @@ class DSButton extends HTMLElement {
   }
 
   setStyle() {
-    console.log('setStyle');
-    this.button.classList = [];
+    this.button.classList.remove();
     this.button.classList.add(this.variant);
+    this.button.disabled = this.disabled;
   }
 
   render() {
-    console.log('render');
     this.setStyle();
   }
 
   connectedCallback() {
-    console.log('connectedCallback');  
+    this.variant = this.DEFAULT_VARIANT;
   }
 
   attributeChangedCallback(attribute, oldValue, newValue) {
-    console.log('attributeChangedCallback');
     if (attribute === 'variant' && oldValue !== newValue) {
       this.variant = newValue;
     }
 
-    this.render();
-  }
+    if (attribute === 'disabled' && oldValue !== newValue) {
+      this.disabled = newValue;
+    }
 
-  adoptedCallback() {
-    console.log('adoptedCallback');  
+    this.render();
   }
 }
 
