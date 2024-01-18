@@ -1,17 +1,19 @@
 .link {
-  font-family: 'Lucida Sans', Verdana, sans-serif;
+  font-family: var(--font-family);
   font-weight: 700;
+  font-size: 1em;
   cursor: pointer;
   border: none;
   outline: none;
   position: relative;
   background-color: transparent;
-  color: #8DB52F;
+  color: var(--color-primary);
   transition: .1s;
 }
 
 .link:hover {
-  box-shadow: 0 0 0 1px #8DB52F;
+  color: var(--color-neutral-dark);
+  box-shadow: 0 0 0 1px var(--color-neutral-dark);
 }
 
 .link:focus {
@@ -23,6 +25,6 @@
 }
 
 .link:disabled {
-  color: #999;
+  color: var(--color-neutral-grey);
   pointer-events: none;
 }

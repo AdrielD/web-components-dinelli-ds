@@ -1,43 +1,31 @@
 .primary {
-  font-family: 'Lucida Sans', Verdana, sans-serif;
+  font-family: var(--font-family);
   font-weight: 700;
+  font-size: 1em;
   cursor: pointer;
   border: none;
   outline: none;
   padding: 8px 16px;
   position: relative;
-  background-color: #8DB52F;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-neutral-white);
   transition: .1s;
 }
 
-.primary:focus::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
+.primary:hover {
+  color: #222;
 }
 
-.primary:hover {
-  color: #8DB52F;
-  background-color: #222;
+.primary:focus {
+  text-decoration: underline;
 }
 
 .primary:active {
-  background-color: #777;
-}
-
-.primary:focus::before {
-  padding: 2px;
-  top: -2px;
-  left:-2px;
-  box-shadow: 0 0 1px 2px #8DB52F;
+  background-color: #222;
+  color: var(--color-primary)
 }
 
 .primary:disabled {
-  background-color: #999;
+  background-color: var(--color-neutral-grey);
   pointer-events: none;
 }

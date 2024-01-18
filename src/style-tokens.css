@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/src/assets/fonts/SourceCodePro-Regular.ttf') format('truetype'),
+       url('/src/assets/fonts/SourceCodePro-Italic.ttf') format('truetype'),
+       url('/src/assets/fonts/SourceCodePro-Bold.ttf') format('truetype'),
+       url('/src/assets/fonts/SourceCodePro-BoldItalic.ttf') format('truetype');
+}
+
+:root {
+  --font-family: 'SourceCodePro', monospace;
+  --color-emerald: #8DB52F;
+  --color-aqua: #2EA7B8;
+  --color-golden: #C7CB0B;
+  --color-sanguine: #B52F37;
+
+  --color-primary: var(--color-emerald);
+
+  --color-neutral-dark: #222;
+  --color-neutral-grey: #999;
+  --color-neutral-white: #fff;
+}

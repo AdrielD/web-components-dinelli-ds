@@ -51,7 +51,7 @@ class DSButton extends HTMLElement {
   }
 
   connectedCallback() {
-    this.variant = this.DEFAULT_VARIANT;
+    this.variant = this.variant || this.DEFAULT_VARIANT;
   }
 
   attributeChangedCallback(attribute, oldValue, newValue) {
