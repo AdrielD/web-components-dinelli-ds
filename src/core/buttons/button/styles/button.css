@@ -1,0 +1,10 @@
+button {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: relative;
+  line-height: 1em;
+}

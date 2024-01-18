@@ -1,23 +1,22 @@
 .primary {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 1em;
-  cursor: pointer;
-  border: none;
-  outline: none;
   padding: 8px 16px;
-  position: relative;
   background-color: var(--color-primary);
   color: var(--color-neutral-white);
-  transition: .1s;
+  transition: .2s;
 }
 
 .primary:hover {
   color: #222;
 }
 
+/*
+TODO:
+- user ::before to create a more decent underline
+- focus must work even with other elements being clicked
+*/
 .primary:focus {
   text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .primary:active {
